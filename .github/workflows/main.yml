@@ -3,6 +3,8 @@ on:
   push:
     branches:
        - main
+  repository_dispatch:
+     types: [trigger-workflow]
 jobs:
   deploy:
     runs-on: ubuntu-latest
