@@ -22,3 +22,5 @@ jobs:
         run: npm run build
       - name: Deploy project
         run: echo "Deploying..."
+  reuse:
+    uses: azadsekhar7/test/.github/workflows/main.yml@main
